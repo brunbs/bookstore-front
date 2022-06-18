@@ -11,6 +11,7 @@ import { FiltersComponent } from './components/bookstore-app/filters/filters.com
 import { ProductListComponent } from './components/bookstore-app/product-list/product-list.component';
 import { ProductItemComponent } from './components/bookstore-app/product-list/product-item/product-item.component';
 import { BookService } from './components/bookstore-app/product-list/product-list.component.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BookService } from './components/bookstore-app/product-list/product-lis
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [BookService],
   bootstrap: [AppComponent]
