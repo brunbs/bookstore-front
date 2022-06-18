@@ -20,7 +20,6 @@ export class ProductListComponent implements OnInit {
   getBooks(): void {
     this.bookService.getBooks().subscribe(bookList => {
       this.books = bookList;
-      console.log(this.books);
     })
   }
 
